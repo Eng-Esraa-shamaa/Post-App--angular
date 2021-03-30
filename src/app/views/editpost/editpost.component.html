@@ -1,0 +1,20 @@
+<form #myForm='ngForm' (ngSubmit)='updatePosts(myForm.value)'> 
+
+    <div class="form-group">
+        <label for="title">title</label>
+        <textarea  class="form-control"
+        type="text"  id="title"  name="title" [(ngModel)]="posts.title"  > </textarea>
+    </div>
+
+<div class="form-group">
+    <label for="body">body</label>
+    <textarea class="form-control" type="text" id="body"  name ="body" [(ngModel)]='posts.body'  ></textarea>
+</div>
+<button class="btn btn-primary">submit</button>
+
+
+
+
+
+
+</form>
